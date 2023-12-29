@@ -3,7 +3,7 @@
   vars_prompt:
   - name: USERNAME
     prompt: pls enter your username
-    pravit: false
+    pravite: false
   - name: PAASWORD
     prompt: pls enter your password
     pravite: true
