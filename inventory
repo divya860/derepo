@@ -2,5 +2,5 @@
 172.31.80.234
 
 [mongodb:vars]
-MONGO-USERNAME=mongodbadmin
+MONGO_USERNAME=mongodbadmin
 MONGO_DB=categories
