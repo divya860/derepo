@@ -1,5 +1,5 @@
 [mongodb]
-172.31.95.32
+172.31.80.234
 
 [mongodb:vars]
 MONGO-USERNAME=mongodbadmin
