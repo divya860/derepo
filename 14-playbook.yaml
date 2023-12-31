@@ -2,10 +2,10 @@
   hosts: mongodb
   become: yes
   tasks:
-  - name: Install a list of packages with a list variable
-  ansible.builtin.yum:
-    name: "{{ packages }}"
-  vars:
-    packages:
-    - httpd
-    - httpd-tools
+  - name: install package
+    ansibli.builtin.yum:
+     name: "{{item}}"
+     state: installed
+    loop:
+    - nginx
+    - postfixs
