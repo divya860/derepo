@@ -3,7 +3,7 @@
   become: yes
   tasks:
   - name: install package
-    ansibli.builtin.yum:
+    yum:
      name: "{{item}}"
      state: installed
     loop:
