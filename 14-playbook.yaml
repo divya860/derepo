@@ -3,9 +3,9 @@
   become: yes
   tasks:
   - name: install package
-    yum:
+    ansible.builtin.yum:
      name: "{{item}}"
      state: installed
     loop:
     - nginx
-    - postfixs
+    - postfix
