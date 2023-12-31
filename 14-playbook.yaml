@@ -2,10 +2,13 @@
   hosts: mongodb
   become: yes
   tasks:
-  - name: install package
-    ansible.builtin.yum:
-     name: "{{item}}"
-     state: installed
-    loop:
-    - nginx
-    - postfix
+  - name: Install packages
+    become: yes
+    package:
+     name:
+       - tmux
+       - rsync
+       - zsh
+       - rsync
+       - wget
+     state: present
